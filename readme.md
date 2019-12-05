@@ -1,4 +1,4 @@
-# Hamchi Sushi
+# Hamachi Sushi
 
 >Sushi Bar web application made using Python, Django, PostgreSql and Bootstrap
 
