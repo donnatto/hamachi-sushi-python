@@ -1,0 +1,97 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sistema de Gestion Hamachi Sushi Bar{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'system' %}">Sistema de Gestion</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item"><a href="{% url 'logout' %}" class="nav-link"><i
+                            class="fas fa-sign-in-alt"></i> Cerrar Sesión</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+{% endblock %}
+
+{% block section %}
+    <div>
+        <section id="card2">
+
+            <div class="container h-100">
+                <div class="row">
+                    <div class="col-md-10 offset-md-2  col-lg-7 offset-lg-5">
+                        <h1 class="text-light" id="section-text-system">
+                            Bienvenido al Sistema de Gestión de Hamachi Sushi Bar
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <h2>Como estás {{ user.username }}</h2>
+
+                <p class="mt-2">Estas son las herramientas para la gestión del restaurant.</p>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3 card-2">
+                    <a href="{% url 'reserva' %}"><img class="card-img-top" src="{% static 'img/img_reserva.jpeg' %}"
+                                                      alt="Image placeholder"></a>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#"></a>Gestión de Reservas</h3>
+                        <p class="card-text">Gestiona las reservas existentes por parte de nuestros clientes. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3 card-2">
+                    <a href="{% url 'postulante' %}"><img class="card-img-top"
+                                                                src="{% static 'img/img_postulantes.jpg' %}"
+                                                                alt="Image placeholder"></a>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#"></a>Gestion de Postulantes</h3>
+                        <p class="card-text">Evalúa los CVs enviados por las personas que desean trabajar con
+                            nosotros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card mb-3 card-2">
+                    <a href="{% url 'mensaje' %}"><img class="card-img-top"
+                                                              src="{% static 'img/img_mensajes.jpg' %}"
+                                                              alt="Image placeholder"></a>
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="#"></a>Mensajes</h3>
+                        <p class="card-text">Consulta toda la mensajería existente y da una respuesta en caso sea
+                            necesario.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

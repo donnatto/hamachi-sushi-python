@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Gaegu');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+html{
+  width: 100%;
+  height: 100%;
+}
+/*Body*/
+body{
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.site-section{
+  padding-top: 74px;
+  padding-bottom: 40px;
+}
+h1{
+  font-size: 4rem;
+  font-family: "Gaegu", cursive;
+  font-weight: bold;
+}
+h2{
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+}
+h3{
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+a{
+  color: #fff;
+}
+.meta{
+  font-size: 12px;
+}
+ul{
+  line-height: 1.5;
+}
+li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+/*Modal*/
+.modal{
+  color: #404040;
+}
+.modal-backdrop{
+  background-color: #404040;
+}
+.modal h5{
+  font-weight: bold;
+}
+
+/* Nav Bar*/
+.navbar-brand {
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: 30px;
+  font-family: "Gaegu", cursive;
+  font-weight: bold;
+}
+.bg-dark{
+  transition: 500ms ease;
+  background: transparent !important;
+}
+.bg-dark.scrolled-md{
+  background: #404040 !important;
+}
+.bg-dark.scrolled{
+  background: #404040 !important;
+}
+
+
+/*Section*/
+#card1 {
+  padding: 13% 2%;
+  background-image: url(../img/bg_1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+}
+#card2 {
+  padding: 13% 2%;
+  background-image: url(../img/bg_logged.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#card3 {
+  padding: 13% 2%;
+  background-image: url(../img/bg_error.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#card-reserva{
+  padding: 13% 2%;
+  background-image: url(../img/bg_reserva.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#card-mensajes{
+  padding: 13% 2%;
+  background-image: url(../img/bg_mensajes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#card-postulantes{
+  padding: 13% 2%;
+  background-image: url(../img/bg_postulantes.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#section-text{
+  padding-top: 7%;
+  text-shadow: 1px 4px 3px rgba(0,0,0, .4),
+               1px 8px 13px rgba(0,0,0, .1),
+               1px 18px 23px rgba(0,0,0, .1);
+}
+#section-text-system{
+  padding-top: 7%;
+  padding-bottom: 10%;
+  text-shadow: 1px 5px 5px rgba(0,0,0, .7),
+               1px 8px 13px rgba(0,0,0, .1),
+               1px 18px 23px rgba(0,0,0, .1);
+  font-family: 'Poppins';
+  font-size: 3rem;
+}
+.media-body{
+  padding: 0 20px;
+}
+
+/*Nosotros*/
+.featured-nosotros{
+  background-image: url('../img/bg_2.jpg');
+  padding-top: 74px;
+  padding-bottom: 64px;
+  color: #fff;
+}
+.featured-text{
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/*Carta*/
+.img-hover{
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.img-hover img{
+  transition: .3s ease all;
+}
+.img-hover:hover img{
+  transform: scale(1.2);
+}
+#carta a{
+  font-weight: bold;
+}
+
+/*Blog*/
+.card-body>p{
+  font-size: 15px;
+}
+.card-2{
+  display: flex;
+  position: relative;
+}
+.card-2:hover{
+  transition: 0.5s ease;
+  border: 1px solid #404040;
+  box-shadow: 5px 5px 40px rgba(0,0,0, .3);
+}
+
+/*Staff*/
+.person:hover{
+  transition: 0.5s ease;
+  box-shadow: 8px 5px 20px rgba(0,0,0, .5);
+}
+.person>img{
+  width: 100px;
+  margin-bottom: 20px;
+}
+.person-info>h2{
+  font-size: 20px;
+  font-weight: 300;
+}
+/*Trabaja con nosotros*/
+.featured-trabaja{
+  background-image: url('../img/bg_3.jpg');
+  padding-top: 74px;
+  padding-bottom: 64px;
+  color: #fff;
+}
+
+/*Contactanos*/
+#form-contacto{
+    margin-top: 40px;
+}
+
+/*Footer*/
+.footer{
+  background: #404040;
+  padding-top: 70px;
+  color: #fff;
+}
+.block-21>figure{
+  flex: 0 0 80px;
+}
+.heading-section{
+  margin-bottom: 25px;
+}
+h3.heading{
+  font-size: 18px;
+  font-weight: 300;
+}
+

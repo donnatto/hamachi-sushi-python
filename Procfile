@@ -1,0 +1,1 @@
+web: gunicorn hamachi.wsgi --log-file

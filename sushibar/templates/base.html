@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}Hamachi Sushi Bar{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" type="image/png" href="{% static 'img/favico.png' %}"/>
+    <script src="https://kit.fontawesome.com/d1bdb6c1ec.js" crossorigin="anonymous"></script>
+</head>
+<body data-spy="scroll" data-targer=".navbar">
+
+{% block navbar %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="ftco-navbar">
+        <div class="container">
+
+            <a class="navbar-brand" href="{% url 'home' %}">Hamachi Sushi Bar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#card1" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item"><a href="#carta" class="nav-link">Carta</a></li>
+                    <li class="nav-item"><a href="#blog" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#staff" class="nav-link">Staff</a></li>
+                    <li class="nav-item"><a href="#instalaciones" class="nav-link">Instalaciones</a></li>
+                    <li class="nav-item"><a href="#trabaja" class="nav-link">Trabaja</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="#modalLogin" data-toggle="modal" data-target="#modalLogin"
+                                            class="nav-link"><i class="fas fa-sign-in-alt"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+{% endblock %}
+
+{% block section %}
+    <div>
+        <section id="card1">
+
+            <div class="container h-100">
+                <div class="row">
+                    <div class="col-md-10 offset-md-2  col-lg-7 offset-lg-5">
+                        <h1 class="text-white" id="section-text">
+                            Descubre el sabor de la cocina nikkei junto a nosotros
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+        <div class="site-section">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="media block-6">
+                            <div class="icon"><img src="{% static 'img/templo.png' %}"/></div>
+                            <div class=" media-body">
+                                <h3 class="heading">Origen</h3>
+                                <p>Somos una cocina fusion peruano-japonesa que busca romper esquemas.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="media block-6">
+                            <div class="icon"><img src="{% static 'img/brocheta.png' %}"/></div>
+                            <div class="media-body">
+                                <h3 class="heading">Calidad</h3>
+                                <p>La calidad y frescura de nuestros insumos garantiza una grata experiencia.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="media block-6">
+                            <div class="icon"><img src="{% static 'img/familia.png' %}"/></div>
+                            <div class="media-body">
+                                <h3 class="heading">Familia</h3>
+                                <p>Nuestro local es perfecto para disfrutarlo acompañado de tus seres queridos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>
+                        Donnatto &copy;2019
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+{% endblock %}
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
