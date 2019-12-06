@@ -3,6 +3,7 @@
 >Sushi Bar web application made using Python, Django, PostgreSql and Bootstrap
 
 [![GitHub](https://img.shields.io/github/license/donnatto/hamachi-sushi-python?color=purple)](https://opensource.org/licenses/MIT)
+[![GitHub issues](https://img.shields.io/github/issues/donnatto/hamachi-sushi-python)](https://github.com/donnatto/hamachi-sushy-python/issues)
 ![GitHub repo size](https://img.shields.io/github/repo-size/donnatto/hamachi-sushi-python?color=blue&label=size)
 
 [![Hamachi Sushi](https://i.imgur.com/A5DkxC5.jpg)](https://hamachi-python.herokuapp.com)
